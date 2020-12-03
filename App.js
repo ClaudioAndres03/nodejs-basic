@@ -1,8 +1,10 @@
 
-// fundamentos
+const { frutero, dinero } = require('./frutas');
 
-const frutas = ['mazana', 'platano', 'pera', 'platano']
+//  Exports y Require
 
-frutas.forEach(fruta => {
-    console.count(fruta)
+frutero.forEach(fruta => {
+    console.count(fruta);
 });
+
+console.log(dinero);
