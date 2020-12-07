@@ -1,20 +1,13 @@
-
-const { frutero, dinero } = require('./frutas');
-const cowsay = require("cowsay")
-
-//  Package.json y NPM
-console.log(
-    cowsay.say({
-        text: "Klok Sicario Muuuuuu",
-        e: "Oo",
-        T: "U",
-    })
-);
+// Fundamentos de servidor HTTP
+const http = require('http');
+const server = http.createServer((req, res) => {
+    res.end('Estoy respondiendo tu solicitud v.3');
+}
+)
 
 
-frutero.forEach(fruta => {
-    console.count(fruta);
-});
-
-console.log(dinero);
-
+const puerto = 3000;
+server.listen(puerto, () => {
+    console.log('Escuchando solicitudes')
+}
+)
