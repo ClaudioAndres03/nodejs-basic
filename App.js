@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     res.render("index", { titulo: "Mi titulo dinamico" })
 })
 
-app.get("/servicios", (req, res) => {
+app.get('/servicios', (req, res) => {
     res.render('servicios', { tituloServicios: "Mi titulo dinamico de servicios" })
 })
 
