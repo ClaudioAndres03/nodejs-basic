@@ -10,16 +10,11 @@ const port = process.env.PORT || 3000;
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 
-
 app.use(static(__dirname + '/public'))
 
-app.get('/', (req, res) => {
-    res.render("index", { titulo: "Mi titulo dinamico" })
-})
-
-app.get('/servicios', (req, res) => {
-    res.render('servicios', { tituloServicios: "Mi titulo dinamico de servicios" })
-})
+//Ruta Web
+app.use('/', require('./router/RouterWeb'))
+app.use('/mascotas', require('./router/Mascotas'))
 
 app.use((req, res, next) => {
     res.status(404).render('404', {
