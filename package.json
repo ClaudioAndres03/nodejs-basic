@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ClaudioAndres03/nodejs-basic.git"
+    "url": "git+https://github.com/ClaudioAndres03/nodejs-basio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ClaudioAndres03/nodejs-basic/issues"
+    "url": "https://github.com/ClaudioAndres03/nodejs-basico/issues"
   },
-  "homepage": "https://github.com/ClaudioAndres03/nodejs-basic#readme",
+  "homepage": "https://github.com/ClaudioAndres03/nodejs-basico#readme",
   "dependencies": {
     "cowsay": "^1.4.0",
     "ejs": "^3.1.5",
